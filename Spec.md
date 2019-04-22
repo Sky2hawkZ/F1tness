@@ -2,13 +2,23 @@ Prototype Specs: Deadline 2019-04-23
 
 Build the absolute core components of my gym app
 
-Login screen, username and nothing else, save username.
+No real log in, have a user state that saves everything concerning the user.
 
-Values to track
+Introductory modal for metric or imperial units
+
+Values to track to user state
     - Times logged in
     - Number of sessions
     - Saved Sessions
     - Added Workout Routines
+    - Sets
+      - Sets Settings
+      - Sets Notes
+      - Reps
+      - Weight
+      - Time (Advanced Feature - Later Development)
+        - Open a time popup for either a countdown, or a timer.
+          - "Voice" feedback on timed sets?
   
 Login Screen Content:
     - Welcome Note
