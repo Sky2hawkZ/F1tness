@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native';
 
-export default class Home extends Component {
+export default class CreateWorkout extends Component {
     render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>
-                    Home Screen
+                    Create Workout View
                 </Text>
             </View>
         );
