@@ -1,3 +1,6 @@
+if (__DEV__) {
+    import('../ReactotronConfig').then(() => console.log('Reactotron Configured'))
+}
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 import { Provider } from 'react-redux'
@@ -8,8 +11,12 @@ class F1tnessApp extends Component {
 
 
     render() {
+        const store = createStore(rootReducer, compose(middleware, Reactotron.createEnhancer()));
         return (
-            <Router />
+            <Provider store={store}>
+                <Router />
+            </Provider>
+
         );
     }
 }

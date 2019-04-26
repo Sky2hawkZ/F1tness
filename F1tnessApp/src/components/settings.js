@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
+//TODO: Add Custom Navbar to settings view
 const SettingsModal = () => {
     return (
         <View style={styles.container}>

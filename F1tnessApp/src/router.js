@@ -12,6 +12,9 @@ import EditWorkout from './components/editWorkout';
 import EditSet from './components/editSet';
 
 import Library from './components/library';
+import AddExercise from './components/addExersice';
+import EditExercise from './components/editExersice';
+
 import Stats from './components/stats';
 import SettingsModal from './components/settings';
 
@@ -59,7 +62,12 @@ const RouterComponent = () => {
                         <Scene
                             key="libraryScene"
                             component={Library}
-                        />
+                        >
+                            <Scene key="createExerciseView"
+                                component={AddExercise} />
+                            <Scene key="editExerciseView"
+                                component={EditExercise} />
+                        </Scene>
                     </Scene>
 
                     {/* Tab and it's scenes */}
@@ -72,7 +80,6 @@ const RouterComponent = () => {
                 </Scene>
                 <Scene
                     key="settingsModal"
-                    direction="vertical"
                     component={SettingsModal}
                     title="Settings"
                 />
